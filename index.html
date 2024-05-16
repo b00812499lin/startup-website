@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Startup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset CSS */
+    html, body, header, nav, ul, li, div, img, h1, h2, p, a, form, label, input, textarea, button {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Condensed', sans-serif; /* Use Roboto Condensed font */
+      line-height: 1.6;
+      background-color: #f3f0d7; /* Light goose yellow */
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .banner {
+      width: 100%;
+      height: 200px; /* Adjust the height of the banner as needed */
+      background-image: url('images/banner.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      border-bottom: 1px solid #ddd; /* Add a bottom border to the navigation */
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      max-width: 100px; /* Adjust the size of the logo as needed */
+      max-height: 100px;
+      border-radius: 50%; /* Make the logo appear as a circle */
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .nav-links li {
+      border: 2px solid #ddd; /* Add border to each navigation item */
+      border-radius: 10px; /* Rounded borders */
+    }
+
+    .nav-links li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .hero {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+
+    .features {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .feature {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #fff; /* Set background color to white */
+      border-radius: 10px;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .product img {
+      max-width: 150px; /* Adjust the size of the product image */
+      max-height: 150px;
+      border-radius: 50%; /* Make the product image appear as a circle */
+      margin-bottom: 10px; /* Add margin to the bottom of the product image */
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin-top: 10px; /* Add margin to the top of the product name */
+    }
+
+    .product p {
+      margin-bottom: 10px; /* Add margin to the bottom of the product description */
+    }
+
+    .contact-form {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    .contact-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #555;
+    }
+
+    /* Ensure the Typeform embed container is visible */
+    .typeform-embed {
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner"></div>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <div class="hero" id="home">
+      <h1>Welcome to MooMooMilk Madness! Where Cows Rule and Udder Delights Await!</h1>
+      <p>At MooMooMilk, we don't believe in reinventing the wheel. There's nothing special about our milk, and that's what makes us really cool. Come join the herd!</p>
+      <a href="#about" class="cta-button">Learn More</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="features" id="products">
+      <h2>Products</h2>
+      <div class="feature">
+        <div class="product">
+          <img src="images/product1.jpg" alt="Cow Milk">
+          <h3>Cow Milk Craze</h3>
+          <p>Sip into the creamy kingdom of cow milk! It’s moo-tivated by happy cows, turning your cereal into a morning symphony.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="product">
+          <img src="images/product2.jpg" alt="Chicken Milk">
+          <h3>Chicken Milk Sensation</h3>
+          <p>Cluck yes to chicken milk, a surprise party in every glass! Skip the rooster crow and start your day with a squawk of flavor.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="product">
+          <img src="images/product3.jpg" alt="Goat Milk">
+          <h3>Goat Milk Galore</h3>
+          <p>Get your goat with goat milk galore! Creamy with a hint of mischief, it's perfect for adventurous sippers and pancake dolloping alike.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <h2>Contact Us</h2>
+      <!-- Typeform Embed Code -->
+      <div class="typeform-embed" data-tf-live="01HY07BVGQ6QCK0S3970HZQ6FE"></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
+    </section>
+  </main>
+</body>
+</html>
